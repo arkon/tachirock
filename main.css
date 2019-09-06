@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #eee;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background: #222;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 1em;
+}
+
+.column {
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.textfield {
+    font-family: 'Courier New', Courier, monospace;
+    height: 20em;
+    margin: 1em 0;
+    width: 100%;
+}

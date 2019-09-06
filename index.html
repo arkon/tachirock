@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <title>MangaRock to Tachiyomi backup converter</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="icon.png" rel="icon" type="image/png">
+</head>
+<body>
+    <div class="column">
+        <p>Enter your Manga Rock backup JSON:</p>
+        <textarea class="textfield" id="json-mangarock" placeholder="Manga Rock backup JSON"></textarea>
+        <button id="convert">Convert</button>
+    </div>
+    <div class="column">
+        <p>Tachiyomi backup JSON:</p>
+        <textarea class="textfield" id="json-tachiyomi" placeholder="Tachiyomi backup JSON" readonly></textarea>
+        <button id="download">Download</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
