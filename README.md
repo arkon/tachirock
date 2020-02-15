@@ -46,7 +46,7 @@ Into something like this for Tachiyomi:
       "manga": [
         "/manga/mrs-serie-372759",
         "Tô Tịch Kỳ Quái",
-        1554176584893433600,
+        1554176584893433663,
         0,
         0
       ],
@@ -58,7 +58,7 @@ Into something like this for Tachiyomi:
       "manga": [
         "/manga/mrs-serie-305579",
         "Hero Waltz",
-        1554176584893433600,
+        1554176584893433663,
         0,
         0
       ],
@@ -70,7 +70,7 @@ Into something like this for Tachiyomi:
       "manga": [
         "/manga/mrs-serie-306150",
         "Ashita no Yoichi",
-        1554176584893433600,
+        1554176584893433663,
         0,
         0
       ],
@@ -82,7 +82,7 @@ Into something like this for Tachiyomi:
       "manga": [
         "/manga/mrs-serie-488011",
         "Hensokukei Quadrangle",
-        1554176584893433600,
+        1554176584893433663,
         0,
         0
       ],

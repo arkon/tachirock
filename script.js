@@ -62,12 +62,9 @@ function getTachiyomiManga(mrSeriesId, mrSeriesName) {
             0,
             0
         ],
-        "chapters": [
-        ],
-        "track": [
-        ],
-        "history": [
-        ]
+        "chapters": [],
+        "track": [],
+        "history": []
     };
 }
 
