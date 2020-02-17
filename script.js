@@ -32,9 +32,10 @@ document.getElementById('convert').addEventListener('click', function() {
 
     var tachiFavs = favorites.map(function(favorite) {
         return getTachiyomiManga(favorite.mid, favorite.manga);
-    });
+    })
+    .join(',');
 
-    tachiBackup = JSON.stringify(getTachiyomiBackup(tachiFavs), null, 2);
+    tachiBackup = getTachiyomiBackup(tachiFavs);
 
     jsonTY.value = tachiBackup;
 });
@@ -44,28 +45,13 @@ document.getElementById('download').addEventListener('click', function() {
 });
 
 function getTachiyomiBackup(mangas) {
-    return {
-        "version": 2,
-        "mangas": mangas,
-        "categories": []
-    };
+    return '{"version":2,"categories":[],"mangas":[' + mangas + ']}';
 }
 
 function getTachiyomiManga(mrSeriesId, mrSeriesName) {
-    return {
-        "manga": [
-            // e.g. "/manga/mrs-serie-100181368"
-            "/manga/mrs-serie-" + mrSeriesId,
-            // e.g. "I’ve Been Killing Slimes for 300 Years and Maxed Out My Level",
-            mrSeriesName,
-            1554176584893433663,
-            0,
-            0
-        ],
-        "chapters": [],
-        "track": [],
-        "history": []
-    };
+    // e.g. "/manga/mrs-serie-100181368"
+    // e.g. "I’ve Been Killing Slimes for 300 Years and Maxed Out My Level",
+    return '{"manga":["/manga/mrs-serie-' + mrSeriesId + '",' + JSON.stringify(mrSeriesName) + ',1554176584893433663,0,0],"chapters":[],"track":[],"history":[]}';
 }
 
 // https://stackoverflow.com/a/30832210
