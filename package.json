@@ -1,0 +1,30 @@
+{
+  "name": "tachirock",
+  "version": "1.0.0",
+  "description": "Manga Rock backup to Tachiyomi backup converter",
+  "scripts": {
+    "build:src": "rm -rf build/ && mkdir build && cp src/* build/",
+    "build:js": "rollup --config",
+    "build": "npm run build:src && npm run build:js",
+    "deploy": "npm run build && gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkon/tachirock.git"
+  },
+  "author": "arkon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arkon/tachirock/issues"
+  },
+  "homepage": "https://github.com/arkon/tachirock#readme",
+  "dependencies": {
+    "json-bigint": "^0.3.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "gh-pages": "^2.2.0",
+    "rollup": "^1.31.1"
+  }
+}

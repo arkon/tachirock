@@ -1,6 +1,5 @@
 'use strict';
-
-(function() {
+var JSONbig = require('json-bigint');
 
 var jsonMR = document.getElementById('json-mangarock');
 var jsonTY = document.getElementById('json-tachiyomi');
@@ -34,7 +33,7 @@ document.getElementById('convert').addEventListener('click', function() {
         return getTachiyomiManga(favorite.mid, favorite.manga);
     });
 
-    tachiBackup = JSON.stringify(getTachiyomiBackup(tachiFavs), null, 2);
+    tachiBackup = JSONbig.stringify(getTachiyomiBackup(tachiFavs), null, 2);
 
     jsonTY.value = tachiBackup;
 });
@@ -86,5 +85,3 @@ function download(data, filename, type) {
         }, 0); 
     }
 }
-
-})();
